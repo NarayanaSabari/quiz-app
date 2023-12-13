@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main: #000000;
+  --support: #ffffff;
+  --highlight: #ffffff;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 4vh 10vw;
+  background-color: var(--main);
+  color: var(--support);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: xx-large;
+}
+.theam {
+  width: 10vw;
+  font-size: large;
+  padding: 15px;
+  text-align: center;
+  background-color: var(--main);
+  border: 4px solid var(--support);
+  border-radius: 50px;
+}
+.questionBoss {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.questionSection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 45px 0;
+  width: 80vw;
+  display: flex;
+  /* flex-wrap: wrap; */
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid var(--support);
+  border-radius: 10px;
+}
+.questionNo {
+  font-size: x-large;
+  margin: 25px;
+}
+.question {
+  margin: 25px;
+  font-size: x-large;
+  color: var(--highlight);
+}
+.options {
+  padding: 45px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+  grid-template-rows: repeat(2); /* 2 rows with fixed height */
+  row-gap: 45px;
+  column-gap: 200px;
+}
+.box-outline {
+  width: 20vw;
+  font-size: x-large;
+  padding: 15px;
+  text-align: center;
+  background-color: var(--main);
+  border: 4px solid var(--support);
+  border-radius: 50px;
+}
+.hover:hover {
+  background-color: var(--support);
+  color: var(--main);
+}
+.highlights {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+.highlights > div {
+  width: 15vw;
+  font-size: x-large;
+  padding: 15px;
+  text-align: center;
+  background-color: var(--main);
+  border: 4px solid var(--support);
+  border-radius: 50px;
+}
