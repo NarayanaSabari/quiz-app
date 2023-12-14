@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import QuestionBox from "./QuestionBox";
 import Data from "../questions";
 import Result from "./Result";
